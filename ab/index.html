@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="pizza.css">
+    <title>food website</title>
+  </head>
+  <body>                                            
+    <header>
+      <a href="home.php" class="logo"style="font-family:Algerian;">FLAVOURLY</a>
+      <ul class="nav">
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li><a href="home.php">About</a></li>
+        <li><a href="about.php">Menu</a></li>
+        <li><a href="orders.php">Orders</a></li>
+        <li><a href="contact.php">Contact</a></li>
+        <li><a href="admin/admin_login.php">Admin</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="search" />
+        <i class="fa-solid fa-magnifying-glass"></i>"
+      </div>
+    </header>
+    <div class="banner">
+        <div></div>
+      <div class="content active">
+        <h5><b> Enjoy Our Delicious Meal </b></h5>
+        <p>
+          <h6>**A Journey Through the History of Our Food Website** </h6><br />Our story
+          began with a passion for food and the joy of sharing it with the
+          world. From humble beginnings as a blog documenting family recipes,
+          our platform evolved into a dynamic food website offering diverse.
+        </p>
+        <div class="button">
+            <a href="admin/admin_login.php">LOGIN</a>
+            <a href="login.php">SIGN UP</a></button>
+        </div>
+      </div>
+    <div class="carousel-box">
+        <div class="carousel">
+                <div class="carousel-item"
+                onClick="changeBg('img1.jpg');">
+                    <img src="image/img1.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeBg('bg,image/img2.jpg');" >
+                    <img src="image/img2.jpg" alt=""/>
+                </div>
+                <div class="carousel-item" onclick="changeBg('img3.jpg');">
+                    <img src="image/img3.jpg" alt=""/>
+                </div>
+                <div class="carousel-item" onclick="changeBg('img4.jpg');">
+                    <img src="image/img4.jpg" alt=""/>
+                </div>
+                <div class="carousel-item" onclick="changeBg('img5.jpg');">
+                    <img src="image/img5.jpg" alt="" />
+                </div>
+                <div class="carousel-item" onclick="changeBg('img6.jpg');">
+                    <img src="image/img6.jpg" alt="" />
+                </div>
+        </div>
+    </div>
+    <div><ul class="sci">
+        <li><a href="https://www.facebook.com."><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.youtube.com."><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://www.twitter.com."><i class="fa-brands fa-twitter"></i></a></li>
+    </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./scripts.js"></script>
+    <script src="pizza.js"></script>
+    <script>
+          $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+    </script>
+  </body>
+</html>
